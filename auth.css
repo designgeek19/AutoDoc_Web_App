@@ -3,7 +3,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('img/signinbg2.jpg') no-repeat center center/cover;
     color: #333;
     display: flex;
     justify-content: center;
@@ -32,19 +32,150 @@ body, html {
     }
 }
 
+/* Navigation Bar Styles */
+.navbar {
+    width: 100%;
+    background-color: #562b08;
+    /* padding: 1rem 0rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.navbar .logo-img {
+    width: 10px;
+    height: 5px;
+    margin-right: 0.5rem;
+}
+
+.navbar .logo h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.navbar .nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:active{
+    color: burlywood;
+}
+
+.navbar .nav-links a:hover {
+    color: #647E68;
+}
+
+.navbar .cta-button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.7rem 1.7rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 520;
+}
+
+.navbar .cta-button:hover {
+    background-color:antiquewhite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* font-weight: 600; */
+    /* border: solid; */
+    border-width: 1px;
+    border-color: #647E68;
+}
+
+.cta-button {
+    background-color: #ffffff;
+    color: #562b08;
+    padding: 0.6rem 1.2rem;
+    margin-left: 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4a230a;
+}
+
+/* Adjust body top padding because of fixed navbar */
+body {
+    padding-top: 80px; /* Adjust depending on navbar height */
+}
+
+/* Add the new MAIN LAYOUT here 👇 */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 2rem;
+    flex-direction: row; /* Left to right */
+}
+
+/* Hero Text (Left Side) */
+.hero-text {
+    max-width: 800px;
+    animation: slideIn 1.5s ease-in-out;
+    text-align: left;
+    line-height: 32px;
+    font-weight: 20px;
+    font-size: x-large;
+    color: #ffffff;
+}
+
+/* Login Card (Right Side) */
+.login-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 380px;
+    animation: slideIn 1s ease-in-out;
+}
+
 /* Login Container */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.8); Semi-transparent background
     animation: fadeIn 2s ease-in-out;
 }
 
 .login-card {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding: 2rem;
     width: 350px;
@@ -73,7 +204,7 @@ body, html {
 }
 
 .login-card h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #333;
     margin-bottom: 1.5rem;
     animation: slideIn 1.4s ease-in-out;
@@ -122,7 +253,8 @@ body, html {
 }
 
 .login-button:hover {
-    background-color: #4a230a;
+    background-color: #647E68;
+    font-weight: bold;
 }
 
 /* Divider */
@@ -150,22 +282,37 @@ body, html {
     margin: 0 1rem;
 }
 
-/* Google Sign-In */
+/* Google Sign-In Button */
 .google-signin {
     margin-top: 1.5rem;
+    text-align: center;
     animation: slideIn 2.2s ease-in-out;
 }
 
-.google-signin .g-signin2 {
-    width: 100%;
-    padding: 0.8rem;
-    border-radius: 4px;
+#googleSignInBtn {
+    background-color: #ffffff;
+    color: #555;
     border: 1px solid #ddd;
-    transition: background-color 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.google-signin .g-signin2:hover {
-    background-color: #f0f0f0;
+#googleSignInBtn:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#googleSignInBtn i {
+    font-size: 1.2rem;
 }
 
 /* Additional Links */

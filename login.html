@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="auth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="img/folders.png">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com">
 </head>
 <body>
-    <div class="login-container">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/folders.png" alt="Document Logo" class="logo-img">
+            <h1>AutoDoc+</h1>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#create_new">Create New</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a class="cta-button" href="#get-started">Get Started</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <!-- Hero Text (Left now) -->
+        <div class="hero-text">
+            <h1>Welcome to AutoDoc+</h1>
+            <p>Your smart companion for creating, editing, and managing professional documents effortlessly.  
+            Experience a new level of productivity and creativity!</p>
+        </div>
+
+        <!-- Login Card (Right now) -->
         <div class="login-card">
             <div class="logo">
-                <img src="https://www.pngkey.com/png/full/114-1143288_document-logo-rsum-document-icon-png.png" alt="AutoDoc+ Logo" class="logo-img">
+                <img src="img/folders.png" alt="AutoDoc+ Logo" class="logo-img">
                 <h1>AutoDoc+</h1>
             </div>
             <h2>Login to Your Account</h2>
@@ -29,20 +55,27 @@
                 </div>
                 <button type="submit" class="login-button">Login</button>
             </form>
+
             <div class="divider">
                 <span>or</span>
             </div>
+
+            <!-- Google Sign-In Button -->
             <div class="google-signin">
-                <div class="g-signin2" data-onsuccess="onGoogleSignIn"></div>
+                <button id="googleSignInBtn">
+                    <i class="fab fa-google"></i> Sign in with Google
+                </button>
             </div>
+
             <div class="additional-links">
                 <a href="#forgot-password">Forgot Password?</a>
                 <a href="#create-account">Create an Account</a>
             </div>
         </div>
+
     </div>
 
-    <!-- JavaScript for Interactivity -->
+    <!-- JavaScript for interactivity -->
     <script src="scripts.js"></script>
 </body>
 </html>
