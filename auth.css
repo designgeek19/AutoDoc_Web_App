@@ -1,0 +1,187 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.login-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 350px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+.logo img.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #562B08;
+    margin: 0;
+}
+
+.login-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    animation: slideIn 1.4s ease-in-out;
+}
+
+/* Form Styles */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    animation: slideIn 1.6s ease-in-out;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #562B08;
+    outline: none;
+}
+
+/* Login Button */
+.login-button {
+    background-color: #562B08;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    animation: slideIn 1.8s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #4a230a;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    animation: slideIn 2s ease-in-out;
+}
+
+.divider span {
+    background-color: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 1rem;
+}
+
+/* Google Sign-In */
+.google-signin {
+    margin-top: 1.5rem;
+    animation: slideIn 2.2s ease-in-out;
+}
+
+.google-signin .g-signin2 {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.google-signin .g-signin2:hover {
+    background-color: #f0f0f0;
+}
+
+/* Additional Links */
+.additional-links {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #777;
+    animation: slideIn 2.4s ease-in-out;
+}
+
+.additional-links a {
+    color: #562B08;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}

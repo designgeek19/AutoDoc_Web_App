@@ -56,3 +56,33 @@ function performAction(action) {
         }
     }
 }
+
+// JavaScript for handling login form submission
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    // Simulate login (replace with actual authentication logic)
+    if (email === 'user@example.com' && password === 'password123') {
+        alert('Login successful!');
+        // Redirect to dashboard or another page
+        window.location.href = 'dashboard.html';
+    } else {
+        alert('Invalid email or password. Please try again.');
+    }
+});
+
+// Google Sign-In Success Handler
+function onGoogleSignIn(googleUser) {
+    const profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId());
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail());
+
+    alert('Google Sign-In Successful!');
+    // Redirect to dashboard or another page
+    window.location.href = 'dashboard.html';
+}
