@@ -198,9 +198,11 @@ body {
 
 .feature-card {
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
+    background-image: url("img/document-vector-colorful-design_341269-1262.avif");
+    /* background-size: contain; */
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -223,8 +225,10 @@ body {
 }
 
 .feature-card p {
-    font-size: 1rem;
-    color: #777;
+    font-size: 0.9rem;
+    color: #4e4d4d;
+    line-height: 20px;
+    /* text-align: justify; */
     margin: 0;
 }
 
@@ -257,6 +261,11 @@ body {
     width: 18%;
 }
 
+.step:hover {
+    box-shadow: #000000;
+    background-color: antiquewhite;
+    }
+
 .step .step-number {
     font-size: 1.6rem;
     color: #562b08;
@@ -283,7 +292,7 @@ body {
 }
 
 .test-platform .container {
-    max-width: 800px;
+    max-width:fit-content;
     margin: 0 auto;
 }
 
@@ -297,7 +306,9 @@ body {
 .test-platform p {
     font-size: 1rem;
     color: #777;
-    margin-bottom: 2rem;
+    width:1200px;
+    line-height: 24px;
+    margin-bottom: 3rem;
 }
 
 .upload-box {
@@ -508,8 +519,8 @@ background-color: antiquewhite;
 /* Contact Section Styles */
 .contact {
     padding: 4rem 2rem;
-    background-color: #647E68;
-    color: #ecf0f1;
+    background-color: #dedede;
+    color: #292929;
     text-align: center;
 }
 
