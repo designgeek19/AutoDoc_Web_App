@@ -35,7 +35,7 @@ body, html {
 /* Navigation Bar Styles */
 .navbar {
     width: 100%;
-    background-color: #562b08;
+    background-color: #562b0800;
     /* padding: 1rem 0rem; */
     display: flex;
     justify-content: space-between;
