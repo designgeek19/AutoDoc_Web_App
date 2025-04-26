@@ -35,7 +35,7 @@ body, html {
 /* Navigation Bar Styles */
 .navbar {
     width: 100%;
-    background-color: #562b0800;
+    background-color: #562b08;
     /* padding: 1rem 0rem; */
     display: flex;
     justify-content: space-between;
@@ -168,18 +168,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 0;
-    background-color: rgba(255, 255, 255, 0.8); Semi-transparent background
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.695); /* Semi-transparent background */
     animation: fadeIn 2s ease-in-out;
 }
 
 .login-card {
-    background-color: #fff;
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.726); /* Semi-transparent white background */
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding: 2rem;
     width: 350px;
     text-align: center;
+    backdrop-filter: blur(10px); /* Blur effect for the background */
     animation: slideIn 1s ease-in-out;
 }
 
