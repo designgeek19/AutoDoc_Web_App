@@ -158,5 +158,40 @@ document.getElementById('googleSignInBtn').addEventListener('click', function() 
     alert('Google Sign-In clicked! (Button is interactive but not functional yet)');
 });
 
+// Form validation and redirect
+const signupForm = document.getElementById('signup-form');
+const passwordInput = document.getElementById('password');
+const confirmPasswordInput = document.getElementById('confirmPassword');
+const passwordStrength = document.getElementById('passwordStrength');
+const passwordMatch = document.getElementById('passwordMatch');
+
+signupForm.addEventListener('submit', function (event) {
+  let valid = true;
+
+  // Check Password Strength
+  if (passwordInput.value.length < 6) {
+    passwordStrength.style.display = 'block';
+    valid = false;
+  } else {
+    passwordStrength.style.display = 'none';
+  }
+
+  // Check Password Match
+  if (passwordInput.value !== confirmPasswordInput.value) {
+    passwordMatch.style.display = 'block';
+    valid = false;
+  } else {
+    passwordMatch.style.display = 'none';
+  }
+
+  if (!valid) {
+    event.preventDefault(); // Stop submission
+  } else {
+    event.preventDefault();
+    alert('Account created successfully!');
+    window.location.href = 'login.html'; // Redirect to login page
+  }
+});
+
 </script>
 

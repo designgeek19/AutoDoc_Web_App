@@ -144,24 +144,16 @@ body {
 
 /* Hero Text (Left Side) */
 .hero-text {
-    max-width: 800px;
+    max-width: 1000px;
     animation: slideIn 1.5s ease-in-out;
     text-align: left;
     line-height: 32px;
-    font-weight: 20px;
+    font-weight: 5px;
     font-size: x-large;
     color: #ffffff;
 }
 
 /* Login Card (Right Side) */
-.login-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    padding: 2rem;
-    width: 380px;
-    animation: slideIn 1s ease-in-out;
-}
 
 /* Login Container */
 .login-container {
@@ -174,14 +166,24 @@ body {
 }
 
 .login-card {
-    background-color: rgba(255, 255, 255, 0.726); /* Semi-transparent white background */
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    padding: 2rem;
-    width: 350px;
-    text-align: center;
-    backdrop-filter: blur(10px); /* Blur effect for the background */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 380px;
+    margin-left: 60px;
     animation: slideIn 1s ease-in-out;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.96);
+    opacity: 85%;
+    padding: 80px 50px;
+    border-radius: 4px;
+    max-width: 700px;
+    width: 80%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .logo {
@@ -193,8 +195,8 @@ body {
 }
 
 .logo img.logo-img {
-    width: 50px;
-    height: 50px;
+    width: 33px;
+    height: 36px;
     margin-right: 0.5rem;
 }
 
@@ -205,7 +207,7 @@ body {
 }
 
 .login-card h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #333;
     margin-bottom: 1.5rem;
     animation: slideIn 1.4s ease-in-out;
@@ -213,8 +215,9 @@ body {
 
 /* Form Styles */
 .input-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: left;
+    margin-right: 1.5rem;
     animation: slideIn 1.6s ease-in-out;
 }
 
@@ -291,30 +294,225 @@ body {
 }
 
 #googleSignInBtn {
-    background-color: #ffffff;
-    color: #555;
-    border: 1px solid #ddd;
-    padding: 0.8rem 1.5rem;
+    background-color: #fff;
+    color: #5f6368; /* Softer gray for text */
+    border: 1px solid #dadce0; /* Google's standard button border color */
+    padding: 0.75rem 1.2rem;
     font-size: 1rem;
-    font-weight: 400;
-    border-radius: 4px;
+    font-weight: 500; /* Slightly bolder text for better readability */
+    border-radius: 6px;
     cursor: pointer;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3); /* Soft shadow */
 }
 
 #googleSignInBtn:hover {
-    background-color: #f7f7f7;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(60, 64, 67, 0.3);
+    border-color: #c6c6c6;
 }
 
 #googleSignInBtn i {
-    font-size: 1.2rem;
+    color: #6d2525; /* Google's blue */
+    font-size: 1.4rem;
 }
+
+
+/* Additional Links */
+.additional-links {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #777;
+    animation: slideIn 2.4s ease-in-out;
+}
+
+.additional-links a {
+    color: #562B08;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Card (Right Side) */
+
+/* Signup Container */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+    padd
+    background-color rgba(255, 255, 255, 0.695); /* Semi-transparent background */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.signup-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 300px;
+    height:max-content;
+    margin-left: 60px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.signup-card {
+    background: rgba(255, 255, 255, 0.96);
+    opacity: 85%;
+    padding: 20px 50px;
+    border-radius: 4px;
+    max-width: 700px;
+    width: 60%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    padding-top: 40px;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+.logo img.logo-img {
+    width: 33px;
+    height: 36px;
+    margin-right: 0.5rem;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #562B08;
+    margin: 0;
+}
+
+.signup-card h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    animation: slideIn 1.4s ease-in-out;
+}
+
+/* Form Styles */
+.input-group {
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-right: 1.5rem;
+    animation: slideIn 1.6s ease-in-out;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #562B08;
+    outline: none;
+}
+
+/* Signup Button */
+.signup-button {
+    background-color: #562B08;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    animation: slideIn 1.8s ease-in-out;
+}
+
+.signup-button:hover {
+    background-color: #647E68;
+    font-weight: bold;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    animation: slideIn 2s ease-in-out;
+}
+
+.divider span {
+    background-color: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 1rem;
+}
+
+/* Google Sign-Up Button */
+.google-signup {
+    margin-top: 1.5rem;
+    text-align: center;
+    animation: slideIn 2.2s ease-in-out;
+}
+
+#googleSignUpBtn {
+    background-color: #fff;
+    color: #5f6368; /* Softer gray for text */
+    border: 1px solid #dadce0; /* Google's standard button border color */
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500; /* Slightly bolder text for better readability */
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3); /* Soft shadow */
+}
+
+#googleSignUpBtn:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(60, 64, 67, 0.3);
+    border-color: #c6c6c6;
+}
+
+#googleSignUpBtn i {
+    color: #6d2525; /* Google's blue */
+    font-size: 1.4rem;
+}
+
 
 /* Additional Links */
 .additional-links {
