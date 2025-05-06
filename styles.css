@@ -547,6 +547,23 @@ background-color: antiquewhite;
     margin-right: 0.5rem;
 }
 
+/* Message Button Styling */
+.message-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #5a3c23; /* Custom button color */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .message-btn:hover {
+    background-color: #292929; /* Darker hover state */
+  }  
+
 /* Footer Styles */
 footer {
     background-color: #562B08;

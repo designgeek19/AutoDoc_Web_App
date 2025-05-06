@@ -1,3 +1,5 @@
+console.log("FAQ script is running...");
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -75,7 +77,6 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 });
 
 // Google Sign-In Success Handler
-<script>
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -193,5 +194,32 @@ signupForm.addEventListener('submit', function (event) {
   }
 });
 
-</script>
+// Contact Us Section
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
 
+    // Simulated form submission
+    const status = document.getElementById('form-status');
+    status.textContent = 'Sending...';
+
+    setTimeout(() => {
+        status.textContent = 'Thank you! Your message has been sent.';
+        document.getElementById('contact-form').reset();
+    }, 1500);
+});
+
+function goToContact() {
+    window.location.href = "contact.html";
+}
+
+// FAQs SECTION
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+
+            button.classList.toggle('active');
+            answer.classList.toggle('open');
+        });
+    });
+});

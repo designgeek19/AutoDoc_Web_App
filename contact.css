@@ -1,0 +1,194 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #dfdfdf;
+    color: #333;
+}
+
+.navbar {
+    background-color: #562B08;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #ecf0f1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #cf6666;
+}
+
+.contact-section {
+    padding: 1em 2em;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 2em auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: xx-large;
+}
+
+.contact-section p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2em;
+    font-size: large;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+input, textarea {
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.cta-button {
+    background-color: #562B08; /* Green shade */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+    background-color: #7d4212; /* Darker green */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+}
+
+.cta-button:active {
+    background-color: #562B08;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#form-status {
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.faqs {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faqs h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.faq-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.4em;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    color: #2a2a2a;
+    position: relative;
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.2em;
+}
+
+.faq-question.active::after {
+    content: "-";
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0 0 0;
+    color: #404040;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.faq-answer.open {
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #562B08;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

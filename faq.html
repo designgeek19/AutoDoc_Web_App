@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us - AutoDoc+</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="img/folders.png" />
+</head>
+<body>
+
+<!-- FAQs SECTION -->
+<section id="faqs" class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">How does AutoDoc+ handle document privacy?</button>
+            <div class="faq-answer">
+                <p>We use 256-bit TLS encryption, and your documents are never shared. We comply with GDPR, CCPA, and other international standards.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do I need an account to use AutoDoc+?</button>
+            <div class="faq-answer">
+                <p>No account is needed for basic usage. However, registering unlocks more document actions and storage options.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What formats does AutoDoc+ support?</button>
+            <div class="faq-answer">
+                <p>AutoDoc+ supports PDF, DOCX, TXT, PPT, PNG, JPG, and more.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Can I cancel my subscription anytime?</button>
+            <div class="faq-answer">
+                <p>Yes. You can cancel your Pro or Enterprise subscription anytime from your account dashboard.</p>
+            </div>
+        </div>
+    </div>
+</section>    
+
+<!-- FAQs SECTION -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+
+            button.classList.toggle('active');
+            answer.classList.toggle('open');
+        });
+    });
+});
+</script>
+
+</body>
+</html>
